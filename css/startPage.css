@@ -1,0 +1,21 @@
+@import './index/index.css';
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+#mainLogo {
+  width: 10rem;
+  cursor: pointer;
+}
+
+#tapToStart {
+  color: var(--light);
+  font-family: var(--jetbrains);
+  font-size: 2rem;
+  margin-top: 2rem;
+  cursor: default;
+}
+#mainLogo.fadeOut, #tapToStart.fadeOut {
+  opacity: 0;
+}

@@ -1,0 +1,187 @@
+@import './index/index.css';
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTAINER                                 */
+/* -------------------------------------------------------------------------- */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+.inner {
+  font-size: 3rem;
+  color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+}
+.inner.fadeIn {
+  opacity: 1;
+}
+
+/* for opening animation */
+
+.gates {
+  width: 100%;
+}
+#topGate {
+  position: absolute;
+  top: 0;
+  width: 1%;
+  height: 50%;
+  overflow: hidden;
+  opacity: 1;
+  border-bottom: 2px solid var(--light);
+  background-color: var(--dark);
+}
+#bottomGate {
+  position: absolute;
+  bottom: 0;
+  width: 1%;
+  height: 50%;
+  overflow: hidden;
+  opacity: 1;
+  border-top: 2px solid var(--light);
+  background-color: var(--dark);
+}
+#topGate.fadeIn,
+#bottomGate.fadeIn {
+  opacity: 1;
+}
+#topGate.slideOutTop,
+#bottomGate.slideOutBottom {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     NAVS                                   */
+/* -------------------------------------------------------------------------- */
+
+header {
+  width: 100%;
+  height: 7rem;
+}
+.mainNav {
+  width: 100%;
+  display: none;
+}
+.mobileNav {
+  width: 100%;
+  padding: 2rem;
+}
+.mobileNavContainer {
+  width: 100%;
+}
+.mobileContainer {
+  transform: translateY(15rem);
+}
+.mainLogo {
+  width: 16rem;
+  padding: 0.5rem;
+}
+.navLink {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-family: var(--jetbrains);
+}
+.navLink p,
+.mobileLink p {
+  transition: 600ms ease;
+}
+.navLink p:hover,
+.mobileLink p:hover {
+  color: var(--secondary);
+  transition: 600ms ease;
+}
+.navLink img,
+.mobileLink img {
+  margin-right: 0.5rem;
+  width: 1rem;
+}
+.contact {
+  display: none;
+}
+.mobileContact {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              MOBILE INNER NAV                              */
+/* -------------------------------------------------------------------------- */
+
+.mobileInnerNav {
+  position: absolute;
+  transform: scaleX(0);
+  background-color: rgba(0, 8, 15, 0.966);
+  padding: 3rem;
+  border-radius: 10px;
+}
+.mobileMenuIcon {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  transition: 600ms ease;
+}
+/* mobile links w/ animations */
+.aboutPage {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--secondary);
+  font-size: 8rem;
+  font-family: var(--jetbrains);
+  font-weight: 700;
+  z-index: -3;
+}
+.projectsPage {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--secondary);
+  font-size: 7rem;
+  font-family: var(--jetbrains);
+  font-weight: 700;
+  z-index: -3;
+}
+.aboutPage:before,
+.projectsPage:before {
+  content: attr(data-text);
+  position: absolute;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SOCIALS                                  */
+/* -------------------------------------------------------------------------- */
+
+.socials {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+}
+.socials i {
+  font-size: 30px;
+  padding-bottom: 2rem;
+  transition: 600ms ease;
+  color: white;
+}
+.socials i:hover {
+  color: var(--secondary);
+  transition: 600ms ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                MAIN CONTENT                                */
+/* -------------------------------------------------------------------------- */
+
+.mainContentContainer {
+  height: 100%;
+}
+.contentSection {
+  width: 100%;
+}
+.contentSection p {
+  font-size: 5rem;
+  font-family: var(--jetbrains);
+  padding: 5rem;
+  text-align: center;
+}

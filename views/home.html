@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <title>stacksantos Portfolio</title>
+  </head>
+  <body>
+    <container class="container">
+      <container class="inner">
+        <header class="flex center">
+          <nav class="flex around mainNav">
+            <img
+              src="../src/stacksantos-logo-sm-white.png"
+              alt="stackSantos logo"
+              class="mainLogo"
+            />
+            <navLinks class="innerNav align">
+              <ul class="row align">
+                <li class="navLink row align">
+                  <img src="../src/Polygon-wht.png" alt="polygon" />
+                  <p>About</p>
+                </li>
+                <li class="navLink row align">
+                  <img src="../src/Polygon-wht.png" alt="polygon" />
+                  <p>Projects/Work</p>
+                </li>
+              </ul>
+            </navLinks>
+            <button class="contact">Get in Touch</button>
+          </nav>
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                               MOBILE MENU                               -->
+          <!-- ----------------------------------------------------------------------- -->
+          <mobileNav class="col align mobileNav">
+            <container class="mobileNavContainer row align between">
+              <img
+                src="../src/stacksantos-logo-sm-white.png"
+                alt="stackSantos logo"
+                class="mainLogo"
+              />
+
+              <i class="fa-solid fa-compass mobileMenuIcon menuClosed"></i>
+            </container>
+            <container class="mobileContainer center">
+              <mobileLinks class="mobileInnerNav col align menuSlideOut">
+                <ul class="col end">
+                  <li class="mobileLink">
+                    <div
+                      class="fillText aboutPageContainer linkContainer menuSlideOut"
+                    >
+                      <a href="/about"></a>
+                      <a href="/about"></a>
+                      <a href="/about"></a>
+                      <a href="/about"></a>
+                      <span class="text aboutPage" data-text="ABOUT"
+                        >ABOUT</span
+                      >
+                    </div>
+                  </li>
+                  <li class="mobileLink">
+                    <div
+                      class="fillText projectsPageContainer linkContainer menuSlideOut"
+                    >
+                      <a href="/projects"></a>
+                      <a href="/projects"></a>
+                      <a href="/projects"></a>
+                      <a href="/projects"></a>
+                      <span class="text projectsPage" data-text="PROJECTS"
+                        >PROJECTS</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </mobileLinks>
+            </container>
+            <!-- <button class="mobileContact">Get in Touch</button> -->
+          </mobileNav>
+          <!-- ----------------------------------------------------------------------- -->
+          <!--                                 SOCIALS                                 -->
+          <!-- ----------------------------------------------------------------------- -->
+          <section class="socials col align">
+            <a href="https://twitter.com/stacksantos" target="_blank"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/christopherleesantos/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/stacksantos" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </section>
+        </header>
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                              MAIN CONTENT                               -->
+        <!-- ----------------------------------------------------------------------- -->
+        <container class="mainContentContainer col align">
+          <section class="mainSection contentSection center"><p>MAINSECTION</p></section>
+          <section class="toolKitSection contentSection center"><p>TOOLKIT</p></section>
+          <section class="projectsSection contentSection center"><p>PROJECTS</p></section>
+          <section class="contactSection contentSection center"><p>CONTACT</p></section>
+          <section class="aboutMeSection contentSection center"><p>ABOUT ME</p></section>
+          <footer class="footer contentSection center"><p>FOOTER</p></footer>
+        </container>
+      </container>
+
+      <gate class="gates justify">
+        <div id="topGate"></div>
+        <div id="bottomGate"></div>
+      </gate>
+    </container>
+    <script src="../js/home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/912f06f88e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
