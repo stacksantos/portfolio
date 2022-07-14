@@ -12,7 +12,7 @@
 body {
   background-color: #000f1e;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -30,9 +30,10 @@ li {
 
   /* COLORS */
   --dark: #000f1e;
-  --light: #446e96;
+  --light: #97c1e7;
+  --bright: #ffc249;
   --primary: #f6fcff;
-  --secondary: #ffd68b;
+  --secondary: #ffa600;
 
   /* MAIN GRADIENT */
   --gradient: linear-gradient(112.28deg, #000000 0.24%, #000f1e 100%);

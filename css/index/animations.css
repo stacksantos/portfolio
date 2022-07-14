@@ -59,7 +59,8 @@
   100% {
     -webkit-clip-path: var(--to);
     clip-path: var(--to);
-    color: var(--secondary);
+    color: var(--light);
+    -webkit-text-stroke-color: var(--light);
   }
 }
 
